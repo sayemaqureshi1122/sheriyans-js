@@ -70,33 +70,54 @@
 // console.log(info);    // this doesn't work now
 
 
-//DAY 3 - datatypes in js
+// //DAY 3 - datatypes in js
 
-//main difference  -  ki agar primitive data type ki value copy ki to next variable ko cpoied value milte hai jo first var se independently kaam karte hai (ie, ek var ki value me change dusre copied value ko effect nahi karta.). But in reference me hume bas first var (parent var) ka refernece cpoy milta hai (ie, ek me change dusre cpoied var me bhi change karta hai).
+// //main difference  -  ki agar primitive data type ki value copy ki to next variable ko cpoied value milte hai jo first var se independently kaam karte hai (ie, ek var ki value me change dusre copied value ko effect nahi karta.). But in reference me hume bas first var (parent var) ka refernece cpoy milta hai (ie, ek me change dusre cpoied var me bhi change karta hai).
 
-//EX: for primitive
-let a = 12;
-let b = a;
-console.log(a); // 12
-console.log(b); // 12
+// //EX: for primitive
+// let a = 12;
+// let b = a;
+// console.log(a); // 12
+// console.log(b); // 12
 
-a = a + 2;
-console.log(a); //14
-console.log(b); // to notice karo ki a ki he value me change hoga b ki nhi --> 12
+// a = a + 2;
+// console.log(a); //14
+// console.log(b); // to notice karo ki a ki he value me change hoga b ki nhi --> 12
 
 
-//EX: for refernce
- let info = {name: "sayema", age : 21};
- let info1 = info;
- console.log(info); // sayema 21
- console.log(info1); // sayema 21
+// //EX: for refernce
+//  let info = {name: "sayema", age : 21};
+//  let info1 = info;
+//  console.log(info); // sayema 21
+//  console.log(info1); // sayema 21
 
- info1.name = "shahid"  // yaha ek me  change dono me change kar raha hai shows ki info1 me koi separate value store nhi hote wo bas info ka reference leke value store karte hai
-console.log(info);  // shahid 21
-console.log(info1); // shahid 21
+//  info1.name = "shahid"  // yaha ek me  change dono me change kar raha hai shows ki info1 me koi separate value store nhi hote wo bas info ka reference leke value store karte hai
+// console.log(info);  // shahid 21
+// console.log(info1); // shahid 21
 
  
 
 //PRIMITIVE --> number, string, boolean, null, undefined, symbol, BigInt
+
+//Symbol -- >
+let details = {
+    id: 1,
+    name:"sam", 
+    lastName : "qureshi"
+};
+console.log(details);
+// i without looking into the object always have a habit to add an id in the object and i did so
+
+let id1 = Symbol("id");
+details[id1] = 0o1;
+console.log(details); // saves from overwriting the og id here
+
+// Bigint -->
+ let h = Number.MAX_SAFE_INTEGER;
+ console.log(h);
+ h = h+2 //9007199254740992 which is wrong to to get ans if the number stored is above the range of number datatype
+let u = 9007199254740991n;
+u = u + 2n;
+console.log(u); //now gives the correct ans
 
 //REFERENCE --> array [], object {}, function ()
