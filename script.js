@@ -124,6 +124,49 @@
 
 // typeof quirks -- > typeof NAN --> number , typeof null --> object, 1 + "1"-->'11'. NAN === NAN -->false
 
-//type coercion --> 
+//type coercion --> jaha pe automatically kisika type of change ho jata hai
 
-//truthy and falsy values  
+//truthy and falsy values  --> falsy --> "", NaN, null, undefined, 0, document.all
+
+//practise questions
+//Q1]
+// function getGrade(score){
+//     if(score <=100 && score >=90) return "A+";
+//     else if(score <=89 && score >=80 ) return "A";
+//     else if(score <= 79 && score >=70) return "B";
+//     else if(score <=69 && score >= 60) return "C";
+//     else if(score <=59 && score >= 33) return "D";
+//     else if (score <=32 && score >=0) return "Fail";
+//     else return "Invalid marks";
+// }
+
+// console.log(getGrade(0));
+
+
+//Q2] rock-paper-scissor logic
+
+// function rps (user, computer){
+   
+//     if(user == computer) return "draw";
+//     if(user =="rock" && computer == "scissor") return "user wins";
+//     if(user == "scissor" && computer == "paper") return "user wins";
+//     if(user == "paper" && computer == "rocks") return "user wins";
+
+//     return "computer wins";
+// }
+
+// console.log(rps("rock", "rock"));
+
+//Day 4 -->  LOOPS(for, while, do-while)
+
+// //Q3] print no from 1-10 using for loop
+// for(let i = 1; i<=10; i++){
+//     console.log(i);  
+// }
+
+ // Q4] print no from 1-10 using while loop
+ let  i = 1;
+ while(i<=10){
+    console.log(i);
+    i++
+ }
