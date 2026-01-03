@@ -97,27 +97,33 @@
 
  
 
-//PRIMITIVE --> number, string, boolean, null, undefined, symbol, BigInt
+// //PRIMITIVE --> number, string, boolean, null, undefined, symbol, BigInt
 
-//Symbol -- >
-let details = {
-    id: 1,
-    name:"sam", 
-    lastName : "qureshi"
-};
-console.log(details);
-// i without looking into the object always have a habit to add an id in the object and i did so
+// //Symbol -- >
+// let details = {
+//     id: 1,
+//     name:"sam", 
+//     lastName : "qureshi"
+// };
+// console.log(details);
+// // i without looking into the object always have a habit to add an id in the object and i did so
 
-let id1 = Symbol("id");
-details[id1] = 0o1;
-console.log(details); // saves from overwriting the og id here
+// let id1 = Symbol("id");
+// details[id1] = 0o1;
+// console.log(details); // saves from overwriting the og id here
 
-// Bigint -->
- let h = Number.MAX_SAFE_INTEGER;
- console.log(h);
- h = h+2 //9007199254740992 which is wrong to to get ans if the number stored is above the range of number datatype
-let u = 9007199254740991n;
-u = u + 2n;
-console.log(u); //now gives the correct ans
+// // Bigint -->
+//  let h = Number.MAX_SAFE_INTEGER;
+//  console.log(h);
+//  h = h+2 //9007199254740992 which is wrong to to get ans if the number stored is above the range of number datatype
+// let u = 9007199254740991n;
+// u = u + 2n;
+// console.log(u); //now gives the correct ans
 
-//REFERENCE --> array [], object {}, function ()
+// //REFERENCE --> array [], object {}, function ()
+
+// typeof quirks -- > typeof NAN --> number , typeof null --> object, 1 + "1"-->'11'. NAN === NAN -->false
+
+//type coercion --> 
+
+//truthy and falsy values  
