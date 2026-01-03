@@ -165,8 +165,49 @@
 // }
 
  // Q4] print no from 1-10 using while loop
- let  i = 1;
- while(i<=10){
-    console.log(i);
-    i++
- }
+//  let  i = 1;
+//  while(i<=10){
+//     console.log(i);
+//     i++
+//  }
+
+// //Q5] print even numbers from 1-20 using for loop
+// for(let i = 1; i <= 20;i++){
+//     if(i % 2 == 0){
+//         console.log(i);
+        
+//     }
+// }
+
+
+// //Q6] find odd numbers from 1-15 using while loop
+// let i = 1;
+// while(i <= 15){
+//     if(i % 2 != 0){
+//         console.log(i);
+//     }
+//     i++;
+// }
+
+// //Q7] print multiplication table 
+// for(let i = 1; i <=10; i++){
+//     console.log("5 x" + i + "=" + 5*i);
+    
+// }
+
+//Q8] find sum of numbers from i to 100 using loop
+// let sum = 0;
+// for(let i = 0; i<=100; i++){
+//     sum = sum + i;    
+// }
+// console.log(sum);
+
+
+//Q9]  print all the numbers between 1-50 that are divisible by 3
+for(let i = 0; i<=100; i++)[
+    if(i % 3=0){
+        console.log(i);
+    }
+    
+}
+
