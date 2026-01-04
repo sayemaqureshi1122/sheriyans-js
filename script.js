@@ -222,11 +222,191 @@
 //     }
 // }
 
-//Q11] count how many numbers are divisible by both 3 and 5
+// //Q11] count how many numbers are divisible by both 3 and 5
+// let count = 0;
+// for(let i = 1; i <=100; i++){
+//     if(i % 3 == 0 && i % 5 == 0){
+//         count += 1;
+//     } 
+// }
+// console.log(count);
+
+// // Q13] stop at first multiple of 7
+// let num = 1;
+// while(num >=0){
+//     console.log(num);
+//     if(num % 7 == 0){
+//         break;
+//     }
+    
+//     num++;   
+// }
+
+// //Q14] skip multiplies of 3
+// for(let i = 1; i <= 100; i++){
+//     if(i % 3 == 0){
+//         continue;
+//     }
+//     console.log(i); 
+// }
+
+// //Q15] print first 5 odd numbers only
+// count = 0;
+// for(let i = 1; i <= 50; i++){
+//     if(i % 2 !==0){
+//         if(count >= 5){
+//             break;
+//         }
+//         console.log(i);
+//         count +=1
+        
+//     }
+// }
+
+// //Q16] print form 1 to 5
+// for(let i = 1; i<=5; i++){
+//     console.log(i);
+    
+// }
+
+// //Q17] print even numbers from 1 to 10
+// for(let i = 1; i<=10; i++){
+//     if(i % 2 == 0){
+//         console.log(i);
+        
+//     }
+// }
+
+// //Q18] print number from 10-1
+// for(let i = 10; i >=1 ; i--){
+//     console.log(i);
+    
+// }
+
+// //Q19] print the sum of numbers from 1-10
+// let sum = 0;
+// for(let i = 0; i<=10; i++){
+//     sum += i;   
+// }
+// console.log(sum);
+
+// //Q20] print table of 5
+// for(let i = 1; i<=10; i++){
+//     console.log(`${5} * ${i} = ${5*i}`);
+    
+// }
+
+// //Q21] count numbers from 1-10 divisible by 3
+// let count = 0;
+// for(let i = 1; i <= 10; i++){
+//     if(i % 3 == 0){
+//         count += 1;
+//     }
+// }
+// console.log(count);
+
+// //Q22] print odd numbers from 1-10
+// for(let i = 1; i<=10; i++){
+//     if(i %2 !==0){
+//         console.log(i);
+        
+//     }
+// }
+
+// //23] print square from 1-5
+// for(let i = 1; i<=5; i++){
+//     console.log(i*i);
+    
+// }
+
+// //Q24] print hello 3 times
+// let count = 1;
+// while(count<=3){
+//     console.log("hello");
+//     count++;   
+// }
+
+// //25]take number from a user and print its table
+// num1 = prompt("enter a number")
+// for(let i =1; i <=10; i++){
+//     console.log(`${num1}*${i}=${num1*i}`);
+    
+// }
+
+
+//25] count number of digits
+// let num1 = 12345;
+// let count = 0;
+// while(num1>0){
+//     num1 = Math.floor(num1/10);
+//     count++;
+// }
+// console.log(count);
+
+// // Q26] reverse a digit
+// let digit = 12345;
+// let rev = 0;
+// while(digit > 0){
+//     let lastDigit = digit % 10;
+//     rev = rev * 10 + lastDigit;
+//     digit = Math.floor(digit/10);
+// }
+// console.log(rev);
+// //Q27 find the sum of digits
+// let num = 12345;
+// let sum = 0;
+// while(num>0){
+//     let lastDigit = num % 10;
+//     sum += lastDigit;
+//     num = Math.floor(num/10);
+// }
+// console.log(sum);
+
+// //Q28] count the no of digits.
+// let num = prompt("enter a number:");
+// let count = 0;
+// while(num>0){
+//     num = Math.floor(num/10);
+//     count++;
+// }
+// console.log(count);
+
+// //Q29] check if palidrome number
+
+// let num = Number(prompt("enter a number"));
+// let og = num;
+// let rev = 0;
+// while(num>0){
+//     let lastDigit = num % 10;
+//     rev = rev * 10 + lastDigit;
+//     num = Math.floor(num/10);
+// }
+// if(rev === og){
+//     console.log(`${og} is a palindrome number`);
+// }
+
+//Q30 check if its a armstrong number
+let num = Number(prompt("enter a number:"));
+let og = num;
+let temp = num;
+let digits = 0;
 let count = 0;
-for(let i = 1; i <=100; i++){
-    if(i % 3 == 0 && i % 5 == 0){
-        count += 1;
-    } 
+//for digits
+while(num>0){
+    num = Math.floor(num/10);
+    digits++;
 }
-console.log(count);
+console.log(digits);
+
+while(temp>0){
+    lastDigit = temp % 10;
+    count = count + ((lastDigit)**digits);
+    temp = Math.floor(num/10);
+    
+}
+if(count === og){
+    console.log(`${og} is a armstrong number`);
+}
+else{
+    console.log("Not a armstrong number");
+}
