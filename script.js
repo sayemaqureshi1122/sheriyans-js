@@ -164,11 +164,11 @@
 //     console.log(i);  
 // }
 
- // Q4] print no from 1-10 using while loop
-//  let  i = 1;
-//  while(i<=10){
+ // Q4] print no from 10-1 using while loop
+//  let  i = 10;
+//  while(i>=1){
 //     console.log(i);
-//     i++
+//     i--;
 //  }
 
 // //Q5] print even numbers from 1-20 using for loop
@@ -203,11 +203,30 @@
 // console.log(sum);
 
 
-//Q9]  print all the numbers between 1-50 that are divisible by 3
-for(let i = 0; i<=100; i++)[
-    if(i % 3=0){
-        console.log(i);
-    }
-    
-}
+// //Q9]  print all the numbers between 1-50 that are divisible by 3
+// for(let i = 1; i<=100; i++){
+//     if(i % 3 == 0){
+//         console.log(i);
+        
+//     }
+// }
 
+// //Q10] ask input from the user and determine if the number is even and odd
+// let num1 = prompt("enter a number:")
+// for( let i = 1; i <= num1; i++){
+//     if(i % 2 == 0){
+//         console.log(`${i} is a even number.`);
+//     }
+//     else{
+//         console.log(`${i} is  a odd number.`);
+//     }
+// }
+
+//Q11] count how many numbers are divisible by both 3 and 5
+let count = 0;
+for(let i = 1; i <=100; i++){
+    if(i % 3 == 0 && i % 5 == 0){
+        count += 1;
+    } 
+}
+console.log(count);
