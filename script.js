@@ -222,6 +222,7 @@
 //     }
 // }
 
+//DAY 5
 // //Q11] count how many numbers are divisible by both 3 and 5
 // let count = 0;
 // for(let i = 1; i <=100; i++){
@@ -385,28 +386,52 @@
 //     console.log(`${og} is a palindrome number`);
 // }
 
-//Q30 check if its a armstrong number
-let num = Number(prompt("enter a number:"));
-let og = num;
-let temp = num;
-let digits = 0;
-let count = 0;
-//for digits
-while(num>0){
-    num = Math.floor(num/10);
-    digits++;
-}
-console.log(digits);
+// //Q30 check if its a armstrong number
+// let num = Number(prompt("enter a number:"));
+// let og = num;
+// let temp = num;
+// let digits = 0;
+// let count = 0;
+// //for digits
+// while(num>0){
+//     num = Math.floor(num/10);
+//     digits++;
+// }
+// console.log(digits);
 
-while(temp>0){
-    lastDigit = temp % 10;
-    count = count + ((lastDigit)**digits);
-    temp = Math.floor(num/10);
+// while(temp>0){
+//     lastDigit = temp % 10;
+//     count = count + ((lastDigit)**digits);
+//     temp = Math.floor(num/10);
     
-}
-if(count === og){
-    console.log(`${og} is a armstrong number`);
-}
-else{
-    console.log("Not a armstrong number");
-}
+// }
+// if(count === og){
+//     console.log(`${og} is a armstrong number`);
+// }
+// else{
+//     console.log("Not a armstrong number");
+// }
+
+
+//DAY 6 --> all about parsing , coercion ans AST(abstract, structure, tree)
+// // just reminding the do-while syntax
+// let x = 3;;
+// do{
+//     x += 1;
+// }
+// while(x<3);
+
+//PARSING --> means JavaScript reading your code and deciding what every symbol means before it runs anything.
+//Unary + always forces numeric coercion.
+let val = typeof +[] ; 
+console.log(val); //gives number cuz + here is the unary operator so, [] = ""  and blank string os falsey so forced to change into numeric
+
+let val1 = typeof {}; 
+console.log(val1); // here {} is considered as an object
+
+console.log({}+[]); // here as it is the first thing is considered as empty block
+// Parsing decides block vs object.
+// Then coercion converts object to primitive.
+
+// for  Binary a +B , If either operand becomes string,
+// then both are converted to strings and concatenated. HERE THE STRING COERSION IS TRIGERRED
