@@ -423,15 +423,17 @@
 
 //PARSING --> means JavaScript reading your code and deciding what every symbol means before it runs anything.
 //Unary + always forces numeric coercion.
-let val = typeof +[] ; 
-console.log(val); //gives number cuz + here is the unary operator so, [] = ""  and blank string os falsey so forced to change into numeric
+// let val = typeof +[] ; 
+// console.log(val); //gives number cuz + here is the unary operator so, [] = ""  and blank string os falsey so forced to change into numeric
 
-let val1 = typeof {}; 
-console.log(val1); // here {} is considered as an object
+// let val1 = typeof {}; 
+// console.log(val1); // here {} is considered as an object
 
-console.log({}+[]); // here as it is the first thing is considered as empty block
+// console.log({}+[]); // here as it is the first thing is considered as empty block
 // Parsing decides block vs object.
 // Then coercion converts object to primitive.
 
 // for  Binary a +B , If either operand becomes string,
 // then both are converted to strings and concatenated. HERE THE STRING COERSION IS TRIGERRED
+
+
