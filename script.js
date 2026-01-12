@@ -436,4 +436,12 @@
 // for  Binary a +B , If either operand becomes string,
 // then both are converted to strings and concatenated. HERE THE STRING COERSION IS TRIGERRED
 
+//DAY 7 functions -->
+//use case = 1]  reuse kar sakte hai code ko ,   2] tab use karte hai jab hume apna code immediately run nhi karna chahate (ex: robot dancing button)
 
+    
+function add (num1, num2){
+    console.log(num1+num2);
+    
+}
+add(12, 13);
